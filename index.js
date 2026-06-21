@@ -7,7 +7,7 @@
 function inputcheck( prefix ){
     let input = 0 ;
     while ( true ){
-        let inputstr = input.toString();
+        let inputstr = "100xdevs" + input.toString();
         let hash = crypto.createHash('sha256').update( inputstr ).digest('hex');
 
         if ( hash.startsWith( prefix )){
